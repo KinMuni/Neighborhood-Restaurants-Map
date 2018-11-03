@@ -98,8 +98,8 @@ class App extends Component {
   getInfos = (marker) => {
     let controlledThis = this;
     // Get URL
-    let place = marker.title;
-    let srcUrl = "";
+   
+    let srcUrl = ""
     srcUrl = srcUrl.replace(/ /g, '%20');
 
    
