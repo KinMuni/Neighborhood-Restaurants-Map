@@ -1,7 +1,12 @@
-// In production, we register a service worker to serve assets from local cache.
 
 // This lets the app load faster on subsequent visits in production, and gives
-// it offline capabilities. However, it also means that developers (and users)
+// it offline capabilities. It intended, among other things, 
+//to enable the creation of effective offline experiences, 
+//intercept network requests and take appropriate action based on whether the network is available, 
+//and update assets residing on the server. 
+//It act as prox  server that sit between th e application, webrowser and the network when available.
+//This also allows access to push notifications and background sync APIs.
+//However, it also means that developers (and users)
 // will only see deployed updates on the "N+1" visit to a page, since previously
 // cached resources are updated in the background.
 

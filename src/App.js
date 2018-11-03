@@ -98,8 +98,8 @@ class App extends Component {
   getInfos = (marker) => {
     let controlledThis = this;
     // Get URL
-   
-    let srcUrl = ""
+    let locat = marker.title;
+    let srcUrl = 'https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles='+ locat;
     srcUrl = srcUrl.replace(/ /g, '%20');
 
    
