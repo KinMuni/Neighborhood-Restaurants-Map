@@ -99,10 +99,10 @@ class App extends Component {
     let controlledThis = this;
     // Get URL
     let place = marker.title;
-    let srcUrl = 'https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles='+place;
+    let srcUrl = "";
     srcUrl = srcUrl.replace(/ /g, '%20');
 
-    // Fetch Wikipedia API
+   
     fetchJsonp(srcUrl)
       .then(function (response) {
         return response.json();
